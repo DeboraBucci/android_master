@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">AndroidMaster</string>
+
     <string name="female">Mujer</string>
     <string name="male">Hombre</string>
     <string name="height">Altura</string>
@@ -15,4 +16,7 @@
     <string name="description_normal_weight">Estas en el peso ideal para tu peso y altura, sigue asi!</string>
     <string name="description_overweight">Tienes el peso mas arriba de lo normal para tu peso y altura.</string>
     <string name="description_obese">Tienes el peso muy por encima de lo normal para tu peso y altura.</string>
+
+    <string name="todo_title">Bienvenido, Aris!</string>
+    <string name="todo_categories">Categorias</string>
 </resources>
