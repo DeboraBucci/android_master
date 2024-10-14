@@ -23,7 +23,6 @@
 
     <!-- TODOApp -->
     <color name="todo_background_card">#2B2B2B</color>
-    <color name="todo_background_disabled">#787878</color>
     <color name="todo_background_app">#202123</color>
     <color name="todo_subtitle_text">#959595</color>
     <color name="todo_accent">#E91E63</color>

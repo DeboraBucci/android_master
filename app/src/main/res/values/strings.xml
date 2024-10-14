@@ -19,4 +19,12 @@
 
     <string name="todo_title">Bienvenido, Aris!</string>
     <string name="todo_categories">Categorias</string>
+    <string name="todo_tasks">Tareas</string>
+    <string name="todo_add_task">Añade la tarea</string>
+    <string name="todo_create_task">Crear tarea</string>
+    <string name="todo_categories_title">Categoría:</string>
+    <string name="todo_task_title">Tarea:</string>
+    <string name="todo_business">Negocios</string>
+    <string name="todo_personal">Personal</string>
+    <string name="todo_other">Otros</string>
 </resources>
