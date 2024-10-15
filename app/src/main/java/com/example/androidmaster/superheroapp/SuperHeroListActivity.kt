@@ -1,15 +1,11 @@
 package com.example.androidmaster.superheroapp
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidmaster.databinding.ActivitySuperHeroListBinding
-import com.example.androidmaster.todoapp.ApiService
-import com.example.androidmaster.todoapp.SuperHeroAdapter
-import com.example.androidmaster.todoapp.SuperHeroDataResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

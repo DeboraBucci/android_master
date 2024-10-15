@@ -1,4 +1,4 @@
-package com.example.androidmaster.todoapp
+package com.example.androidmaster.superheroapp
 
 import retrofit2.Response
 import retrofit2.http.GET
