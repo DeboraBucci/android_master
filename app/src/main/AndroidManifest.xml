@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
-
+        <activity
+            android:name=".superheroapp.DetailSuperHeroActivity"
+            android:exported="false" />
         <!-- MENU -->
         <activity
             android:name=".MenuActivity"
@@ -24,32 +26,23 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- FIRST APP-->
+        </activity> <!-- FIRST APP -->
         <activity
             android:name=".firstapp.FirstAppActivity"
             android:exported="false" />
         <activity
             android:name=".firstapp.ResultActivity"
-            android:exported="false" />
-
-        <!-- IMC APP-->
+            android:exported="false" /> <!-- IMC APP -->
         <activity
             android:name=".imcapp.ImcCalculatorActivity"
             android:exported="false" />
-
         <activity
             android:name=".imcapp.ImcResultActivity"
-            android:exported="false" />
-
-        <!-- TodoAPP-->
+            android:exported="false" /> <!-- TodoAPP -->
         <activity
             android:name=".todoapp.TodoActivity"
             android:exported="false"
-            android:theme="@style/Theme.TODOApp" />
-
-        <!-- SUPERHERO APP -->
+            android:theme="@style/Theme.TODOApp" /> <!-- SUPERHERO APP -->
         <activity
             android:name=".superheroapp.SuperHeroListActivity"
             android:exported="false" />

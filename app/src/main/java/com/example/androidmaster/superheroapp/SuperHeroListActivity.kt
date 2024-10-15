@@ -1,5 +1,6 @@
 package com.example.androidmaster.superheroapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
@@ -15,6 +16,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class SuperHeroListActivity : AppCompatActivity() {
 
+    companion object {
+        const val EXTRA_HERO_ID = "hero_id"
+    }
+
     private lateinit var binding: ActivitySuperHeroListBinding
     private lateinit var retrofit: Retrofit
     private lateinit var adapter: SuperHeroAdapter
@@ -28,6 +33,7 @@ class SuperHeroListActivity : AppCompatActivity() {
         retrofit = getRetrofit()
 
         initUI()
+        initListeners()
     }
 
     private fun initUI() {
@@ -43,10 +49,14 @@ class SuperHeroListActivity : AppCompatActivity() {
 
         })
 
-        adapter = SuperHeroAdapter()
+        adapter = SuperHeroAdapter { superheroId -> navigateToDetail(superheroId)}
         binding.rvHeroes.setHasFixedSize(true)
         binding.rvHeroes.layoutManager = LinearLayoutManager(this)
         binding.rvHeroes.adapter = adapter
+    }
+
+    private fun initListeners() {
+
     }
 
     private fun searchByName(query: String) {
@@ -83,5 +93,11 @@ class SuperHeroListActivity : AppCompatActivity() {
             .baseUrl("https://superheroapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    private fun navigateToDetail(id: String) {
+        intent = Intent(this, DetailSuperHeroActivity::class.java)
+        intent.putExtra(EXTRA_HERO_ID, id)
+        startActivity(intent)
     }
 }
