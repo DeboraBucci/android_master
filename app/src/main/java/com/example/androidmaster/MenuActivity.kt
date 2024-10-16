@@ -23,6 +23,7 @@ class MenuActivity : AppCompatActivity() {
         val btnImcApp = findViewById<Button>(R.id.btnIMCApp)
         val btnTodoApp = findViewById<Button>(R.id.btnTODOApp)
         val btnSuperHeroApp = findViewById<Button>(R.id.btnSuperHeroApp)
+        val btnSettings = findViewById<Button>(R.id.btnSettings)
 
         // LISTENERS
         btnSaludapp.setOnClickListener {

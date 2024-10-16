@@ -41,4 +41,8 @@
     <color name="superhero_stat_power">#FFEB3B</color>
     <color name="superhero_stat_combat">#4CAF50</color>
 
+    <!-- Settings -->
+    <color name="settings_text_title">#202020</color>
+    <color name="settings_text_subtitle">#C8C8C8</color>
+    <color name="settings_icon">#202020</color>
 </resources>

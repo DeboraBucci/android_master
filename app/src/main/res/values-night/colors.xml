@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Settings -->
+    <color name="settings_text_title">#FFFFFF</color>
+    <color name="settings_text_subtitle">#9F9F9F</color>
+    <color name="settings_icon">#FFFFFF</color>
+</resources>
