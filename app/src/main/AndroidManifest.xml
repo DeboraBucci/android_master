@@ -15,9 +15,11 @@
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
         <activity
-            android:name=".superheroapp.DetailSuperHeroActivity"
+            android:name=".settings.SettingsActivity"
             android:exported="false" />
-        <!-- MENU -->
+        <activity
+            android:name=".superheroapp.DetailSuperHeroActivity"
+            android:exported="false" /> <!-- MENU -->
         <activity
             android:name=".MenuActivity"
             android:exported="true">
